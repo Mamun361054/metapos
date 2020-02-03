@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.metamorphosis.metapos">
+
+    <application
+        android:name=".Activity.Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/metapos"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/metapos"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity android:name=".Activity.More.PrivacyPolicyActivity">
+        </activity>
+        <activity android:name=".Activity.More.TermsOfUseActivity" />
+        <activity android:name=".Activity.More.FAQActivity" />
+        <activity android:name=".Activity.More.ProfileActivity" />
+        <activity android:name=".Activity.More.AboutUsActivity" />
+        <activity android:name=".Activity.More.MoreActivity" />
+        <activity android:name=".Activity.AccountsActivity" />
+        <activity android:name=".Activity.SalesActivity" />
+        <activity android:name=".Activity.DashBoardActivity" />
+        <activity
+            android:name=".Activity.LogInActivity"
+            android:theme="@style/MyMaterialTheme.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

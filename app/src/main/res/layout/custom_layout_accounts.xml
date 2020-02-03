@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/box_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:weightSum="3">
+
+
+        <ImageView
+            android:id="@+id/iconHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:layout_weight="2"
+            android:src="@drawable/ic_home"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_img"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvSalesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEW ARRIVALS - 178011"
+                android:textColor="@color/black"
+                android:lines="2"
+                android:ellipsize="end"
+                android:ems="3"
+                style="right"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvSalesAmnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvSalesTitle"
+                android:layout_alignLeft="@+id/tvSalesTitle"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@+id/tvSalesTitle"
+                android:text="500"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
