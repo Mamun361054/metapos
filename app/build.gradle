@@ -12,6 +12,7 @@ android {
         versionCode 2
         versionName "1.1"
         testInstrumentationRunner "android.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -57,4 +58,6 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
     implementation 'com.github.prolificinteractive:material-calendarview:1.5.0'
+
+    implementation 'com.github.angads25:toggle:1.1.0'
 }

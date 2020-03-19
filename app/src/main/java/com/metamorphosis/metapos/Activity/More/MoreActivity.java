@@ -37,7 +37,7 @@ import retrofit2.Response;
 public class MoreActivity extends AppCompatActivity {
 
     private AHBottomNavigation ahBottomNavigation;
-    private TextView tvAboutUs, tvFAQ, tvTermsOfUse, tvPrivacyPolicy, tvProfile;
+    private TextView tvAboutUs, tvFAQ, tvTermsOfUse, tvPrivacyPolicy, tvProfile, tvSettings;
     private RecyclerView recyclerView;
     private String TAG = "MoreActivity";
     private ApiInterface apiInterface;
@@ -57,6 +57,7 @@ public class MoreActivity extends AppCompatActivity {
         tvAboutUs = (TextView) findViewById(R.id.tvAboutUs);
         tvFAQ = (TextView) findViewById(R.id.tvFAQ);
         tvTermsOfUse = (TextView) findViewById(R.id.tvTermsOfUse);
+        tvSettings = (TextView) findViewById(R.id.tvSettings);
         tvPrivacyPolicy = (TextView) findViewById(R.id.tvPrivacyPolicy);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
@@ -73,6 +74,12 @@ public class MoreActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MoreActivity.this, AboutUsActivity.class));
+            }
+        });
+        tvAboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MoreActivity.this, SettingsActivity.class));
             }
         });
 

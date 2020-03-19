@@ -135,10 +135,10 @@
                 android:text="Privacy Policy" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:background="#D5D8DC" />
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:background="#D5D8DC" />
 
             <TextView
                 android:id="@+id/tvAboutUs"
@@ -150,8 +150,22 @@
                 android:paddingRight="16dp"
                 android:paddingTop="16dp"
                 android:text="About Us" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:background="#D5D8DC" />
 
-
+            <TextView
+                android:id="@+id/tvSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:text="Settings" />
 
             <View
                 android:layout_width="match_parent"

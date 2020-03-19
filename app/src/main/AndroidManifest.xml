@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.metamorphosis.metapos">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".Activity.Application.MyApplication"
         android:allowBackup="true"
@@ -11,8 +14,8 @@
         android:roundIcon="@mipmap/metapos"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".Activity.More.PrivacyPolicyActivity">
-        </activity>
+        <activity android:name=".Activity.More.SettingsActivity"></activity>
+        <activity android:name=".Activity.More.PrivacyPolicyActivity"></activity>
         <activity android:name=".Activity.More.TermsOfUseActivity" />
         <activity android:name=".Activity.More.FAQActivity" />
         <activity android:name=".Activity.More.ProfileActivity" />
@@ -31,8 +34,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
